@@ -1,7 +1,47 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { AdmindashboarComponent } from './admindashboar/admindashboar.component';
+import { AddcategoryComponent } from './addcategory/addcategory.component';
+import { CategorylistComponent } from './categorylist/categorylist.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    component:SignUpComponent,
+    path:"signup"
+  },
+  {
+    component:SignUpComponent,
+    path:""
+  },
+  {
+    component:LoginComponent,
+    path:"login"
+  },
+  {
+    component:ForgotpasswordComponent,
+    path:"forgotpassword"
+  },
+  {
+    component:ResetPasswordComponent,
+    path:"resetpassword"
+  },
+  {
+    component:AdmindashboarComponent,
+    path:"admindashboard"
+  },
+  {
+    component:AddcategoryComponent,
+    path:"addcategory"
+  },
+  {
+    component:CategorylistComponent,
+    path:"categorylist"
+  }
+]; 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

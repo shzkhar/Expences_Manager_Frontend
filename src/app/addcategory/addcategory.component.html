@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Category Field</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		label {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"] {
+			padding: 10px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 5px;
+			box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+			transition: background-color 0.3s ease;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Add Category Field</h1>
+		</div>
+
+		
+			<label for="categoryName">Category Name:</label>
+			<input type="text" id="addcategory" [(ngModel)]="addcategory" required>
+
+			<button (click)="addCategory()"><input type="submit" value="Add Category"></button>
+		
+	</div> 
+</body>
+</html>
+

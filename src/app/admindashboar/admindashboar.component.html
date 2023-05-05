@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Management System</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+		}
+
+		.category-button {
+			background-color: #008CBA;
+		}
+		
+		.subcategory-button {
+			background-color: #f44336;
+		}
+
+		.user-button {
+			background-color: #555555;
+		}
+
+		.button-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body align="center">
+	<div class="container">
+		<div class="header">
+			<h1>Management System</h1>
+		</div>
+
+		<div class="button-container">
+			<a routerLink="/addcategory"><button class="button category-button">Manage Category</button></a>
+		</div>
+       
+        <div class="button-container">
+            <button class="button subcategory-button">Manage Subcategory</button>
+	    </div>
+    
+        <div class="button-container">
+            <button class="button user-button">Manage User</button>
+        </div>
+       
+        <div class="button-container">
+          <button class="button Vendor-button">Manage Vendor</button><br><br>
+        </div></div>
+</body>
+</html>

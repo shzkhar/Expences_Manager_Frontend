@@ -3,14 +3,33 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { AdmindashboarComponent } from './admindashboar/admindashboar.component';
+
+import { AddcategoryComponent } from './addcategory/addcategory.component';
+import { CategorylistComponent } from './categorylist/categorylist.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignUpComponent,
+    LoginComponent,
+    ForgotpasswordComponent,
+    ResetPasswordComponent,
+    AdmindashboarComponent,
+    AddcategoryComponent,
+    CategorylistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
