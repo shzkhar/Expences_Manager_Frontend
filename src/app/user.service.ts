@@ -44,4 +44,17 @@ public getAllCategory():Observable<any>{
 public deleteCategoryById(id:any):Observable<any>{
   return this.http.delete(environment.apiUrl+"/deleteCategoryById/"+id)
 }
+
+public addSubCategoryy(user:any):Observable<any>{
+  return this.http.post(environment.apiUrl+"/addSubCategory",user)
+}
+
+public getAllSubCategory():Observable<any>{
+  return this.http.get(environment.apiUrl+"/getAllSubCategory")
+}
+
+public deleteSubCategoryByIdd(id:any):Observable<any>{
+  return this.http.delete(environment.apiUrl+"/deleteSubCategoryById/"+id)
+}
+
 }

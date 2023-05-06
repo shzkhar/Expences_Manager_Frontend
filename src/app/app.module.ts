@@ -13,6 +13,9 @@ import { AdmindashboarComponent } from './admindashboar/admindashboar.component'
 
 import { AddcategoryComponent } from './addcategory/addcategory.component';
 import { CategorylistComponent } from './categorylist/categorylist.component';
+import { AddsubcategoryComponent } from './addsubcategory/addsubcategory.component';
+import { SubcategorylistComponent } from './subcategorylist/subcategorylist.component';
+import { AddvendorComponent } from './addvendor/addvendor.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { CategorylistComponent } from './categorylist/categorylist.component';
     ResetPasswordComponent,
     AdmindashboarComponent,
     AddcategoryComponent,
-    CategorylistComponent
+    CategorylistComponent,
+    AddsubcategoryComponent,
+    SubcategorylistComponent,
+    AddvendorComponent
   ],
   imports: [
     BrowserModule,

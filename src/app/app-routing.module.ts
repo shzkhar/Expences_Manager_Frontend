@@ -7,6 +7,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { AdmindashboarComponent } from './admindashboar/admindashboar.component';
 import { AddcategoryComponent } from './addcategory/addcategory.component';
 import { CategorylistComponent } from './categorylist/categorylist.component';
+import { AddsubcategoryComponent } from './addsubcategory/addsubcategory.component';
+import { SubcategorylistComponent } from './subcategorylist/subcategorylist.component';
 
 const routes: Routes = [
   {
@@ -40,6 +42,14 @@ const routes: Routes = [
   {
     component:CategorylistComponent,
     path:"categorylist"
+  },
+  {
+    component:AddsubcategoryComponent,
+    path:"addsubcategory"
+  },
+  {
+    component:SubcategorylistComponent,
+    path:"subcategorylist"
   }
 ]; 
 
