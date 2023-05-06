@@ -9,6 +9,8 @@ import { AddcategoryComponent } from './addcategory/addcategory.component';
 import { CategorylistComponent } from './categorylist/categorylist.component';
 import { AddsubcategoryComponent } from './addsubcategory/addsubcategory.component';
 import { SubcategorylistComponent } from './subcategorylist/subcategorylist.component';
+import { AddvendorComponent } from './addvendor/addvendor.component';
+import { VendorlistComponent } from './vendorlist/vendorlist.component';
 
 const routes: Routes = [
   {
@@ -50,6 +52,14 @@ const routes: Routes = [
   {
     component:SubcategorylistComponent,
     path:"subcategorylist"
+  },
+  {
+    component:AddvendorComponent,
+    path:"addvendor"
+  },
+  {
+    component:VendorlistComponent,
+    path:"vendorlist"
   }
 ]; 
 
