@@ -10,18 +10,22 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
 
-  signUpp(user:any):Observable<any>{
-    let url=environment.apiUrl+"/user/create"
-    let hdr = "hello";
-    return this.http.post(url, user, {
-      headers: {
-        header:hdr
-      }
-    });
-    // return this.http.post(environment.apiUrl+"/signUp",user)
+//   signUpp(user:any):Observable<any>{
+//     let url=environment.apiUrl+"/user/create"
+//     let hdr = "hello";
+//     return this.http.post(url, user, {
+//       headers: {
+//         header:hdr
+//       }
+//     });
+//     // return this.http.post(environment.apiUrl+"/signUp",user)
+// }
+
+public signUpp(user:any):Observable<any>{
+  return this.http.post(environment.apiUrl+"/signUp",user)
 }
 
-loginn(user:any):Observable<any>{
+public loginn(user:any):Observable<any>{
   return this.http.post(environment.apiUrl+"/login",user)
 }
 
@@ -67,5 +71,13 @@ public getAllVendorr():Observable<any>{
 
 public deleteVendorByIdd(id:any):Observable<any>{
   return this.http.delete(environment.apiUrl+"/deleteVendorById/"+id)
+}
+
+public getAllUserr():Observable<any>{
+  return this.http.get(environment.apiUrl+"/getAllUsers")
+}
+
+public deleteUserByIdd(id:any):Observable<any>{
+  return this.http.delete(environment.apiUrl+"/deleteUserById/"+id)
 }
 }

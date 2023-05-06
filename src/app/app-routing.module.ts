@@ -11,6 +11,7 @@ import { AddsubcategoryComponent } from './addsubcategory/addsubcategory.compone
 import { SubcategorylistComponent } from './subcategorylist/subcategorylist.component';
 import { AddvendorComponent } from './addvendor/addvendor.component';
 import { VendorlistComponent } from './vendorlist/vendorlist.component';
+import { UserlistComponent } from './userlist/userlist.component';
 
 const routes: Routes = [
   {
@@ -60,6 +61,10 @@ const routes: Routes = [
   {
     component:VendorlistComponent,
     path:"vendorlist"
+  },
+  {
+    component:UserlistComponent,
+    path:"userlist"
   }
 ]; 
 

@@ -17,6 +17,7 @@ import { AddsubcategoryComponent } from './addsubcategory/addsubcategory.compone
 import { SubcategorylistComponent } from './subcategorylist/subcategorylist.component';
 import { AddvendorComponent } from './addvendor/addvendor.component';
 import { VendorlistComponent } from './vendorlist/vendorlist.component';
+import { UserlistComponent } from './userlist/userlist.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { VendorlistComponent } from './vendorlist/vendorlist.component';
     AddsubcategoryComponent,
     SubcategorylistComponent,
     AddvendorComponent,
-    VendorlistComponent
+    VendorlistComponent,
+    UserlistComponent
   ],
   imports: [
     BrowserModule,

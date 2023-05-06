@@ -66,30 +66,30 @@
   </style>
 </head>
 <body >
-    <h1 align="center">SignUp Page</h1>
-  
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname" [(ngModel)]="firstname" required>
+    <h1 align="center">Create a new account</h1><br>
+    
+    <!-- <label for="firstname">First Name:</label> -->
+    <input type="text" placeholder="First name" [(ngModel)]="firstname" required>
 
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" [(ngModel)]="lastname" required>
+    <!-- <label for="lastname">Last Name:</label> -->
+    <input type="text" placeholder="Last name" [(ngModel)]="lastname" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" [(ngModel)]="email" required>
+    <!-- <label for="email">Email:</label> -->
+    <input type="email" placeholder="email address" [(ngModel)]="email" required>
 
-    <label for="mobno">Phone Number:</label>
-    <input type="tel" id="phone" [(ngModel)]="mobno" pattern="[0-9]{10}" required>
+    <!-- <label for="mobno">Phone Number:</label> -->
+    <input type="tel" placeholder="Mobille number" [(ngModel)]="mobno" pattern="[0-9]{10}" required>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" [(ngModel)]="password" required>
+    <!-- <label for="password">Password:</label> -->
+    <input type="password" placeholder="Password" [(ngModel)]="password" required>
 
     <button (click)="signUp()"> <input type="submit" value="Sign Up"></button>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a routerLink="/login"> Login</a>
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+    <a routerLink="/login"> Already have an account?</a>
  
 </body>
 </html>
